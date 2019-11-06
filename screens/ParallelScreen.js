@@ -19,7 +19,7 @@ class ParallelScreen extends React.Component {
       }),
       Animated.timing(positionAnim, {
         toValue: { x: 200, y: 100 },
-        easing: Easing.back(),
+        easing: Easing.inOut(Easing.linear),
         duration: 3000,
       })
     ]).start();

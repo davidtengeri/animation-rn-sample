@@ -7,10 +7,11 @@ import ParallelScreen from './screens/ParallelScreen';
 import StaggerScreen from './screens/StaggerScreen';
 import InterpolateScreen from './screens/InterpolateScreen';
 import LayoutScreen from './screens/LayoutScreen';
+import FadeInScreenHook from './screens/FadeInScreenHook';
 
 const AppNavigator = createStackNavigator({
   Home: HomeScreen,
-  FadeIn: FadeInScreen,
+  FadeIn: FadeInScreenHook,
   Sequence: SequenceScreen,
   Parallel: ParallelScreen,
   Stagger: StaggerScreen,

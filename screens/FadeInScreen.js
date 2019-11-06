@@ -11,6 +11,7 @@ class FadeInScreen extends React.Component {
     Animated.timing(fadeAnim, {
       toValue: 1,
       duration: 5000,
+      useNativeDriver: true,
     }).start((result) => console.log(result));
   }
 
